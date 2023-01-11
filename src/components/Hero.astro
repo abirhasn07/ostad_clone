@@ -1,0 +1,90 @@
+---
+import heroImg from "../../public/hero_img.png";
+---
+
+<section class="hero">
+  <figcaption>
+    <h1>ক্যারিয়ারের সেরা স্কিলগুলো শিখুন <span>কোডিং বাংলার</span> সাথে</h1>
+    <div class="button-group">
+      <button>ওয়েব সেমিনারে যোগদিন</button>
+      <button>আমাদের কোর্স সমুহ দেখুন</button>
+    </div>
+  </figcaption>
+  <figure>
+    <img src={heroImg} alt="hero image" />
+  </figure>
+</section>
+
+<style>
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+  }
+
+  figcaption,
+  figure {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h1 > span {
+    background: -webkit-linear-gradient(#f2c94c, #f2994a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .button-group {
+    /* background-color: red; */
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-block: 2em;
+  }
+
+  button {
+    min-height: 55px;
+  }
+
+  button:first-child {
+    background: var(--ostad-yellow-80, #ffcd33);
+    color: var(--ostad-black, #000);
+    border: 1px solid var(--ostad-yellow-80, #ffcd33);
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background 0.5s, color 0.3s;
+    transition-delay: 0.2s;
+  }
+  button:first-child:hover {
+    background-color: transparent;
+    color: var(--ostad-yellow-80, #ffcd33);
+  }
+  button:last-child {
+    background: transparent;
+    color: var(--ostad-yellow-80, #ffcd33);
+    border: 1px solid var(--ostad-yellow-80, #ffcd33);
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background 0.5s, color 0.3s;
+  }
+
+  button:last-child:hover {
+    color: var(--ostad-black, #000);
+    background: var(--ostad-yellow-80, #ffcd33);
+  }
+
+  img {
+    border-radius: 50%;
+    height: 65vh;
+  }
+</style>

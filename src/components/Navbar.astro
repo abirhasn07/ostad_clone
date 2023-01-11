@@ -1,0 +1,61 @@
+---
+---
+
+<nav>
+  <div class="logo">
+    <p>
+      কোডিং <span>বাংলা</span>
+    </p>
+  </div>
+
+  <ul>
+    <li>আমাদের কোর্স সমুহ</li>
+    <li>আপকামিং ব্যাচ</li>
+    <li>লগইন</li>
+  </ul>
+  <!-- mobile menu  -->
+
+  <div class="hidden">
+    <p>open menu</p>
+    <p>close menu</p>
+  </div>
+</nav>
+
+<style>
+  nav {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: var(--white);
+  }
+  .logo {
+    width: 10%;
+
+    display: grid;
+    place-items: center;
+  }
+  .logo > p {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+  }
+  li {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    font-weight: 500;
+  }
+
+  li:hover {
+    opacity: 0.7;
+  }
+</style>
