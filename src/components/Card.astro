@@ -1,6 +1,9 @@
 ---
+const img = Astro.props.img;
+const name = Astro.props.name;
+const title = Astro.props.title;
 ---
 
 <div>
-  <img src="" alt="" />
+  <img src={img} alt={name} loading="lazy" />
 </div>

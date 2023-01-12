@@ -1,11 +1,14 @@
 ---
+import categoriesData from "../data/categories";
 ---
 
 <section>
   <div class="title">
-    <h2>আপনার ক্যারিয়ার গড়ুন কোডিং বাংলার সাথে</h2>
+    <h2>আপনার ক্যারিয়ার Goal</h2>
     <p>আপনার গোল সেট করে শুরু করুন আপনার ক্যারিয়ার গ্রোথ</p>
   </div>
 
-  <div></div>
+  <div>
+    {categoriesData.map((item) => <img src={item.img} />)}
+  </div>
 </section>
